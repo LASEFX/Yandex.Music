@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.karim.yandex">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ico"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ico"
+        android:supportsRtl="true"
+        android:logo="@drawable/ico"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".Playlist"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Dezhavu"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Premera"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Goroskop"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Office"
+            android:parentActivityName=".MainActivity"></activity>
+    </application>
+
+</manifest>
